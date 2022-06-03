@@ -20,7 +20,7 @@ const Footer = () => {
                             <h5>Prijavi se za newsletter</h5>
                             <p>Svakog prvog u mesecu dobijas novo izdanje!</p>
                             <div className="d-flex newsletter">
-                                <label for="newsletter1" className="visually-hidden">Email address</label>
+                                {/* <label for="newsletter1" className="visually-hidden">Email address</label> */}
                                 <input id="newsletter1" type="text" className="form-control" placeholder="Email address" />
                                 <button className="btn btn-primary" type="button"><i className="fa-solid fa-check"></i></button>
                             </div>

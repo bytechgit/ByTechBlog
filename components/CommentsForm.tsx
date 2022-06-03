@@ -10,9 +10,10 @@ const CommentsForm = ({ slug }) => {
   useEffect(() => {
     setLocalStorage(window.localStorage);
     const initalFormData = {
-      name: window.localStorage.getItem('name'),
-      email: window.localStorage.getItem('email'),
-      storeData: window.localStorage.getItem('name') || window.localStorage.getItem('email'),
+      name: window.localStorage.getItem('name') as string,
+      email: window.localStorage.getItem('email') as string,
+      storeData:( window.localStorage.getItem('name') || window.localStorage.getItem('email'))? true : false,
+      comment:" " as string
     };
     setFormData(initalFormData);
   }, []);

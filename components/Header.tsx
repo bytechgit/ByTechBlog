@@ -15,7 +15,7 @@ const Header = () => {
   return (
     <>
       <Head>
-        <script src="https://kit.fontawesome.com/dd4ecbb228.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/dd4ecbb228.js" crossOrigin="anonymous"></script>
       </Head>
       <div className='landing-blog-header-wrapper'>
         <div className="landing-blog-header">

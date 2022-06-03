@@ -22,6 +22,7 @@ const PostWidget = ({ categories, slug }) => {
   }, [slug]);
 
   return (
+    <> 
     <div className="bg-white  p-8 pb-12 mb-8 wrapper">
       <h3 className="text-xl mb-8 font-semibold border-b pb-4">{slug ? 'Srodne objave' : 'Najnovije objave'}</h3>
       {relatedPosts.map((post, index) => (
@@ -49,6 +50,7 @@ const PostWidget = ({ categories, slug }) => {
         </div>
       ))}
     </div>
+    </>
   );
 };
 
